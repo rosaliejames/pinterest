@@ -1,6 +1,8 @@
 Items: 
 <ol>
 <% @items.each do |item| %> 
-	<li><%=item.user%> : <%=item[:name]%></li> 
+	<li><%= link_to "#{item.user.user_name}", "/users/#{item.user.id}" %> : <%=item[:name]%>  
+	<%= link_to "Delete", "/items/#{item.id}", :method => :delete %>
+	</li> 
 <%end%>
 </ol>

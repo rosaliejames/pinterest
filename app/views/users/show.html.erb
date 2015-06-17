@@ -1,8 +1,11 @@
 User Page 
-<%= @user.user_name %>
+<%= @user.user_name %> <br />
+<%= image_tag @user.avatar.url %>
+<!--<%= image_tag @user.avatar.url(:medium) %>
+<%= image_tag @user.avatar.url(:thumb) %>-->
 <ol>
-<% @stories.each do |story| %>
-	<li><%= story.name %></li>
+<% @items.each do |item| %>
+	<li><%= item.name %></li>
 <%end%>
 </ol>
 
