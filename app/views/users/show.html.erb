@@ -1,0 +1,9 @@
+User Page 
+<%= @user.user_name %>
+<ol>
+<% @stories.each do |story| %>
+	<li><%= story.name %></li>
+<%end%>
+</ol>
+
+

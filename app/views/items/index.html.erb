@@ -1,0 +1,6 @@
+Items: 
+<ol>
+<% @items.each do |item| %> 
+	<li><%=item.user%> : <%=item[:name]%></li> 
+<%end%>
+</ol>
